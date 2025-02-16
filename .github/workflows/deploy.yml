@@ -3,10 +3,10 @@ name: Deploy Vue to GitHub Pages
 on:
   push:
     branches:
-      - master  # Ajusta si tu rama principal se llama diferente (ej. master)
+      - main  # Ajusta si tu rama principal es diferente (ej. master)
 
 permissions:
-  contents: read
+  contents: write  # 🔑 Permisos para push
   pages: write
   id-token: write
 
@@ -17,13 +17,18 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v3
 
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
       - name: Instalar dependencias
         run: npm install
 
-      - name: Generar build
+      - name: Generar build (Vue CLI)
         run: npm run build
 
-      - name: Subir a GitHub Pages
+      - name: Desplegar a GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
