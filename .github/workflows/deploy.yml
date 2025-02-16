@@ -3,7 +3,7 @@ name: Deploy Vue to GitHub Pages
 on:
   push:
     branches:
-      - main  # Ajusta si tu rama principal es diferente (ej. master)
+      - master 
 
 permissions:
   contents: write  # 🔑 Permisos para push
