@@ -1,0 +1,20 @@
+<Modal ref="ModalSkillSector"></Modal>
+<section class="skills-sector" :id="$t('menu.skills')">
+    <Carousel class="bg-section h-100" :pauseAutoplayOnHover="true" :itemsToScroll="!isMobile ? 5 : 3" :transition="!isMobile ? 5000 : 100"
+        :items-to-show="!isMobile ? 5 : 3" :wrap-around="true"  :autoplay="5000">
+        <Slide class="h-100" v-for="skill in skills" :key="skill" @click="openModalSkill(skill.title,skill.description,skill.top)">
+            <div class="textbox-skill" :title="skill.title">
+                <div class="carousel__item">
+                    <img :src="getImageRef(skill.title)" :alt="skill.title">
+                    <img class="topskill" v-if="(skill.top != 0)" :src="getImageRef('FLAME')" alt="Top skill">
+                    <input type="image" class="infoskill" :src="getImageRef('INFO')"
+                        alt="Info skill" />
+                </div>
+            </div>
+        </Slide>
+        <template #addons>
+            <Navigation />
+        </template>
+    </Carousel>
+
+</section>

@@ -1,0 +1,59 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Directorios de compilación
+!.gitkeep
+
+# Configuración del entorno
+.env
+.env.*.local
+
+# Caché y archivos temporales
+*.log
+*.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Dependencias de Cypress (si usas testing)
+cypress/screenshots/
+cypress/videos/
+
+# Configuración de Jest
+jest/
+coverage/
+
+# Archivos de configuración de editores de código
+*.sublime-project
+*.sublime-workspace
+
+# Mac OS y Linux
+*.swp
+*.swo
+
+# Babel
+.babelrc
+.babelrc.js
+.babelrc.json
+.babelrc.cjs
+.babelrc.mjs
+.babel.config.js
+.babel.config.json
+.babel.config.cjs
+.babel.config.mjs
+babel.config.js
+.npm/
+.cache/
+
+
+#
+/dist
+/public

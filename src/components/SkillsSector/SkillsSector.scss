@@ -1,0 +1,48 @@
+.carousel__item img {
+  width: 80%;
+  height: 80%;
+  z-index: 9;
+}
+
+.carousel__item {
+  width: 10vh;
+  height: 10vh;
+  position: relative;
+  cursor: pointer;
+  margin: 2vh 0;
+}
+
+.topskill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.5vh !important;
+  height: 2.5vh !important;
+  z-index: 999;
+}
+
+.infoskill {
+  width: 2.5vh !important;
+  height: 2.5vh !important;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel__item {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  padding: 1.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+
+  .carousel__prev,
+  .carousel__next {
+    display: none !important;
+  }
+
+}

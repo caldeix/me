@@ -1,0 +1,21 @@
+<section v-if="!isMobile" class="menu-sector">
+  <div id="appmenu">
+    <div id="menu_center">
+      <div @click="goToSection($t('menu.home'))" :class="{ active: selectedSection === $t('menu.home')  }">
+        <span>{{$t('menu.home')}}</span>
+      </div>
+      <div @click="goToSection($t('menu.social'))" :class="{ active: selectedSection === $t('menu.social') }">
+        <span>{{$t('menu.social')}}</span>
+      </div>
+      <div @click="goToSection($t('menu.skills'))" :class="{ active: selectedSection === $t('menu.skills') }">
+        <span>{{$t('menu.skills')}}</span>
+      </div>
+     <!-- <div @click="goToSection($t('menu.projects'))" :class="{ active: selectedSection === $t('menu.projects') }">
+        <span>{{$t('menu.projects')}}</span>
+      </div>-->
+      <div @click="goToSection($t('menu.timelapse'))" :class="{ active: selectedSection === $t('menu.timelapse') }">
+        <span>{{$t('menu.timelapse')}}</span>
+      </div>
+    </div>
+  </div>
+</section>

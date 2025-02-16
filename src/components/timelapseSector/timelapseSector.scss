@@ -1,0 +1,44 @@
+.timelapse-sector #container{
+    display: flex;
+    justify-content: left;  
+    width: 50%;
+
+}
+ul{
+ list-style-type: none;
+}
+.odd{
+    
+}
+.linkedin,
+.web{
+    width: 3vh;
+    height: 3vh;
+}
+.cvitem{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FE9900;
+    cursor: pointer;
+}
+.timelapse-sector{
+margin-bottom:10vh;
+}
+h4{
+    cursor: pointer;
+}
+span{
+    color:white;
+    font-weight: 600;
+}
+.desc{
+    color: white;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .timelapse-sector #container{
+        width: 95%;
+    }
+
+}

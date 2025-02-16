@@ -1,0 +1,18 @@
+<section class="timelapse-sector bg-section" :id="$t('menu.timelapse')">
+    <div id="container">
+        <ul>
+            <li v-for="(item, index) in cv" class="item" :class="{ 'odd': index % 2 !== 0 }" @click="showDesc(index)">
+
+                <h4> <span class="cvitem">{{item.title}}</span> <span>{{item.ini}}-{{item.end
+                        == null ? "HOY" : item.end}}</span> <a v-if="item.linkedin" :href="item.linkedin"
+                        target="_blank"><img :src="getImageRef(LINKEDIN)" class="linkedin" alt=""></a>
+                        <a v-if="item.url" :href="item.url"
+                        target="_blank"><img :src="getImageRef(WEB)" class="web" alt=""></a>
+                </h4>
+
+                <p class="desc" :id="'text-'+index">{{item.description}}</p>
+
+            </li>
+        </ul>
+    </div>
+</section>

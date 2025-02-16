@@ -1,0 +1,16 @@
+<section class="social-sector bg-section" :id="$t('menu.social')">
+  <div v-for="(social, index) in social_keys" :key="index">
+    <div :id="social.social" class="social">
+      <a v-if="(!social.values.text)" :href="social.values.href" target="_blank">
+        <img class="social-img" :title="social.values.href" :src="getImageRef(social.values.imgref)" :alt="social.href">
+      </a>
+      <a v-if="(social.values.text)" :href="'mailto:'+social.values.href" target="_blank">
+        <img class="social-img" :title="social.values.href" :src="getImageRef(social.values.imgref)" :alt="social.href">
+      </a>
+      <a v-if="(social.values.text)" id="mailid" :href="'mailto:'+social.values.href">
+        <div class="text_val selectable">{{social.values.text}} </div>
+      </a><img v-if="(social.values.text)" class="social-img" id="copypaste" :data-mail="social.values.href"
+        @click="copy()" :src="getImageRef(social.values.imgref2)">
+    </div>
+  </div>
+</section>

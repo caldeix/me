@@ -1,0 +1,42 @@
+
+#appmenu  {
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    height: 5vh;
+    color: white;
+    top:0;
+    z-index: 99999999;
+}
+
+#appmenu #menu_center{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#appmenu #menu_center div{
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 16px;
+    }
+    #appmenu{
+        position:fixed;
+        top:0
+    }
+    #appmenu #menu_center{
+        width: 100%;
+        justify-content: space-between;
+    }
+    #appmenu #menu_center div{
+        width: 20%;
+    }
+  }

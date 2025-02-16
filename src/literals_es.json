@@ -1,0 +1,143 @@
+{
+    "name": "Luis Miguel Caldeiro Fernandez",
+    "role": "Full Stack Developer",
+    "workat": "Actualmente, estoy desarrollando proyectos de IA centrados en la automatización de procesos y la optimización de servicios internos, aplicando nuevas tecnologías para mejorar la eficiencia y la innovación dentro de ",
+    "menu": {
+        "social": "Social",
+        "home": "Home",
+        "projects": "Proyectos",
+        "timelapse": "Trayectoria",
+        "skills": "Habilidades"
+    },
+    "skills": [
+        {
+            "id": 10,
+            "title": "PHP",
+            "top": 1,
+            "description": "PHP es mi punto fuerte, con aproximadamente cuatro años de experiencia. Lo he utilizado tanto para crear aplicaciones de manera nativa con JS, AJAX, jQuery, CSS y HTML, como para desarrollar RESTful APIs. En algunas ocasiones, he utilizado Laravel para implementar estas APIs, aunque la mayoría han sido desarrolladas con frameworks propios de las empresas donde he trabajado."
+        },
+        {
+            "id": 11,
+            "title": "LARAVEL",
+            "top": 0,
+            "description": "Parte experiencia en el ámbito de desarrollo tambien ha sido realizar evoluciones de RESTful APIs utilizando el framework Laravel. He utilizado este framework de manera efectiva para desarrollar servicios backend robustos y eficientes."
+        },
+        {
+            "id": 20,
+            "title": "VUE",
+            "top": 0,
+            "description": "En el ámbito de desarrollo frontend, he estado involucrado en el desarrollo activo de la principal aplicación de ATLSGLOBAL S, utilizando Vue durante aproximadamente un año y medio. Además, he realizado proyectos personales, como el portafolio que estás visualizando actualmente, desarrollado en Vue 3."
+        },
+        {
+            "id": 21,
+            "title": "JAVASCRIPT",
+            "top": 0,
+            "description": "En cuanto a JavaScript (JS), he trabajado extensamente en diversos contextos, desde el desarrollo de aplicaciones nativas en PHP con jQuery hasta la implementación de potentes frameworks como Vue y React."
+        },
+        {
+            "id": 23,
+            "title": "REACT",
+            "top": 0,
+            "description": "En el caso de React, aunque mi experiencia es principalmente personal, estoy trabajando en un proyecto notable. Trasladé un concepto de finanzas personales desde una hoja de cálculo de Excel, con scripts y programación extensa, a una aplicación hecha en React, alimentada por una RESTful API en Laravel. Actualmente en construcción"
+        },
+        {
+            "id": 30,
+            "title": "MYSQL",
+            "top": 1,
+            "description": "Mi experiencia con bases de datos se ha centrado en MySQL. He desarrollado bases de datos completas para especificaciones de productos y he utilizado MySQL de manera habitual en combinación con PHP/JAVA para el tratamiento de datos. También tengo conocimientos sobre SQL8 y he migrado bases de datos completas, especialmente orientadas a microservicios, utilizando stored procedures desde las APIs para interactuar con los datos."
+        },
+        {
+            "id": 70,
+            "title": "PYTHON",
+            "top": 0,
+            "description": "En cuanto a Python, he desarrollado pequeños programas tanto de manera profesional como personal, incluyendo automatizaciones y algunas APIs con Flask. También he explorado el uso de Python en proyectos de robótica utilizando una Raspberry Pi y componentes adicionales"
+        },
+        {
+            "id": 80,
+            "title": "JAVA",
+            "top": 0,
+            "description": "En los últimos dos años, he utilizado Java para realizar evoluciones y correcciones en APIs, implementando daemons configurados con cron para realizar acciones como el procesamiento de archivos, el envío de correos electrónicos o la transferencia de datos en bases de datos, siempre con un enfoque orientado a microservicios"
+        }
+    ],
+    "social_keys": [
+        {
+            "social": "curriculum",
+            "values": {
+                "href": "https://drive.google.com/file/d/11EcV8aThkjQNMFMwjV2Y-9ahSRv72_6E/view?usp=sharing",
+                "imgref": "CV"
+            }
+        },
+        {
+            "social": "github",
+            "values": {
+                "href": "https://github.com/lmcf",
+                "imgref": "GITHUB"
+            }
+        },
+        {
+            "social": "linkedin",
+            "values": {
+                "href": "https://www.linkedin.com/in/caldeiro-luism/",
+                "imgref": "LINKEDIN"
+            }
+        },
+        {
+            "social": "mail",
+            "values": {
+                "href": "caldeiro@pm.me",
+                "imgref": "MAIL",
+                "text": "caldeiro@pm.me",
+                "imgref2": "COPYPASTE"
+            }
+        },
+        {
+            "social": "cobi",
+            "values": {
+                "href": "https://caldeix.github.io/agentcobiai_web/",
+                "imgref": "COBI"
+            }
+        }
+    ],
+    "cv":[
+        {
+          "linkedin": "https://www.linkedin.com/company/at-ls/",
+          "url": "https://www.atls-global.com/",
+          "title": "ATLS GLOBAL",
+          "description": "Desempeñé un rol clave en la actualización tecnológica del sistema principal de la empresa dentro del entorno ATLS, implementando mejoras significativas al actualizar los sistemas a sus versiones más recientes, lo que resultó en una notable optimización de los tiempos de procesamiento. Entre mis principales responsabilidades se encuentra la creación y evolución de REST APIs en PHP y JAVA, orientadas a microservicios con un framework propio, así como el desarrollo de interfaces front-end en Vue.js, lo que me permitió consolidarme como desarrollador full stack. También implementé automatización de procesos mediante colas, mejorando la eficiencia operativa. Participé activamente en la mayoría de los proyectos de la empresa, desde el desarrollo de nuevas funcionalidades hasta la modificación de sistemas existentes y la resolución de errores críticos, contribuyendo constantemente a la mejora y estabilidad del producto.",
+          "ini": 21,
+          "end": null
+        },
+        {
+          "linkedin": "https://www.linkedin.com/company/clickart/",
+          "url": "https://www.clickedu.net",
+          "title": "CLICKEDU",
+          "description": "En CLICKEDU, me encargué de la resolución de incidencias en la aplicación educativa principal, gestionando problemas tanto en el backend como en el frontend. Además, realicé mejoras significativas en ambos entornos, optimizando el rendimiento del sistema y garantizando su estabilidad. Utilicé Laravel para implementar soluciones eficientes en el backend y mejorar la estructura y funcionalidad del frontend, contribuyendo a una mejor experiencia de usuario y mayor eficiencia operativa.",
+          "ini": 20,
+          "end": 21
+        },
+        {
+          "linkedin": "https://www.linkedin.com/company/foxtenn-bgreen-sl/",
+          "url": "http://www.foxtenn.com/company",
+          "title": "FOXTENN",
+          "description": "En FOXTENN, fui responsable de la instalación y gestión de hardware y software especializado para la recolección de datos en grandes eventos de tenis. Trabajé con su tecnología avanzada de línea electrónica y análisis de rendimiento, utilizando cámaras de alta velocidad y escáneres láser para capturar con precisión el bote de la pelota y los movimientos de los jugadores en tiempo real. Estas implementaciones optimizaron la precisión y velocidad de los análisis, garantizando una captura de datos exacta que cumplía con los más altos estándares de torneos ATP, WTA y ITF.",
+          "ini": 19,
+          "end": 21
+        },
+        {
+          "linkedin": "https://www.linkedin.com/company/gmedia-es/",
+          "url": "https://www.gmedia.es",
+          "title": "GMEDIA SL",
+          "description": "En GMEDIA SL, desempeñé un rol clave en la creación y personalización de páginas web para diversos clientes, ofreciendo soluciones a medida con WordPress y desarrollando temas personalizados según las necesidades específicas de cada proyecto. Además, me enfoqué en asegurar una excelente experiencia de usuario mediante el uso de tecnologías modernas, contribuyendo a la transformación digital de múltiples negocios.",
+          "ini": 18,
+          "end": 19
+        },
+        {
+          "linkedin": null,
+          "url": "http://repararportatilbarcelona.es",
+          "title": "CELLSERVICE SL",
+          "description": "En CELLSERVICE SL, fui responsable de la reparación y configuración de equipos informáticos, asegurando el correcto funcionamiento de los sistemas para clientes. Mi trabajo incluía la identificación y resolución de problemas técnicos, optimización del rendimiento de los equipos, y la instalación de software necesario para satisfacer las necesidades tecnológicas de cada cliente.",
+          "ini": 16,
+          "end": 17
+        }
+      ]
+}

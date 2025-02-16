@@ -1,0 +1,11 @@
+
+<section class="skills-modal">
+  <div class="modal" v-if="showModal">
+    <div class="modal-content">
+      <span class="close" @click="closeModal"><img :src="getImageRef('EXIT')" alt="Exit button"/></span>
+      <h2>{{ title }}<img class="topskill" v-if="(top != 0)" :src="getImageRef('FLAME')" alt="Top skill"></h2>
+      <p>{{ description }}</p>
+    </div>
+  </div>
+</section>
+

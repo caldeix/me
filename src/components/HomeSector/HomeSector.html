@@ -1,0 +1,16 @@
+<section class="home-sector" :id="$t('menu.home')">
+  <div id="main" class="bg-section">
+      <div id="textbox">
+        <h1>{{$t('name')}}</h1>
+        <p><strong>{{$t('role')}}</strong></p>
+        <p><small>{{$t('workat')}}<a href="#" target="_blank" id="href_work"> ATLS GLOBAL SL</a></small></p>
+      </div>
+      <div id="avatar">
+        <img src="https://media.licdn.com/dms/image/v2/C4D03AQGJ9B5PJj0K1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1631016421362?e=1745452800&v=beta&t=ia3AdtSAHGVLle2uPVhbXI5Q39Ker8GT2gonKr3csEw" alt="Profile Picture"/>
+      </div>      
+  </div>
+  <Social :isMobile="isMobile"></Social>
+  <Skills :isMobile="isMobile"></Skills>
+  <Timelapse :isMobile="isMobile"></Timelapse>
+</section>
+

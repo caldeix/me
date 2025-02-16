@@ -1,0 +1,55 @@
+.social-sector {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-sector .social {
+    margin: 2vh;
+}
+
+.social-sector .social .social-img {
+    width: 5.5vh;
+    height: 5.5vh;
+}
+
+#mail {
+    display: flex;
+    align-items: center;
+
+}
+
+#mail a {
+    text-decoration: none;
+    color: white;
+}
+
+#mail .text_val {
+    margin-left: 5px;
+    text-decoration: none;
+    display: flex;
+}
+
+#copypaste {
+    width: 2.5vh !important;
+    height: 2.5vh !important;
+    margin-left: 1vh;
+    z-index: 9;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 16px;
+    }
+
+    .social-sector {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #copypaste,#mailid{
+        display: none;
+    }
+
+}
