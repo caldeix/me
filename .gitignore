@@ -51,7 +51,3 @@ coverage/
 .babel.config.mjs
 .npm/
 .cache/
-
-
-#
-/public
