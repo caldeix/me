@@ -49,7 +49,6 @@ coverage/
 .babel.config.json
 .babel.config.cjs
 .babel.config.mjs
-babel.config.js
 .npm/
 .cache/
 
