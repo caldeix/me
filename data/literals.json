@@ -1,0 +1,358 @@
+{
+  "personal": {
+    "name": "Luis Miguel Caldeiro Fernández",
+    "firstName": "Luis Miguel Caldeiro",
+    "lastName": "Fernández",
+    "role": "Full Stack Developer",
+    "email": "caldeiro@pm.me",
+    "profileImage": "https://media.licdn.com/dms/image/v2/C4D03AQGJ9B5PJj0K1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1631016421362?e=1754524800&v=beta&t=Lw9rb55Ip6TxuG6yl3xpKt9zkiJI3LGifitz2yRcsLg"
+  },
+  "hero": {
+    "description": "Especializado en desarrollo backend y soluciones de IA. Actualmente trabajando en ATLS GLOBAL SL, enfocado en la automatización de procesos y optimización de servicios. Y desarrollando y optimizando APIs internas",
+    "company": "ATLS GLOBAL SL",
+    "cta": {
+      "primary": "Conoce más sobre mí",
+      "secondary": "Descargar CV"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Soy un desarrollador full stack apasionado por crear soluciones tecnológicas que marquen la diferencia. Mi experiencia abarca desde el desarrollo frontend hasta la implementación de sistemas backend complejos.",
+    "sectionTitle": "Mi Trayectoria",
+    "description": [
+      "Con más de 5 años de experiencia en el desarrollo web, he trabajado en proyectos que van desde aplicaciones educativas hasta sistemas de gestión empresarial complejos.",
+      "Actualmente en ATLS GLOBAL SL, lidero iniciativas de modernización tecnológica y desarrollo de soluciones de IA para automatización de procesos. Aparte una de mis principales funciones en mi trayectoria ha sido crear RestFull API's.",
+      "Mi enfoque se centra en escribir código limpio, mantenible y escalable, siempre buscando las mejores prácticas y tecnologías más actuales del mercado."
+    ],
+    "highlights": [
+      {
+        "title": "5+ Años de Experiencia",
+        "description": "Desarrollando aplicaciones web robustas y escalables"
+      },
+      {
+        "title": "Innovación en IA",
+        "description": "Implementando soluciones de automatización inteligente"
+      },
+      {
+        "title": "Orientado a Resultados",
+        "description": "Enfocado en optimización y mejora continua"
+      },
+      {
+        "title": "Trabajo en Equipo",
+        "description": "Colaboración efectiva en proyectos multidisciplinarios"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "subtitle": "Un conjunto diverso de tecnologías y herramientas que me permiten crear soluciones completas y eficientes.",
+    "categories": [
+      { "id": "all", "name": "Todas" },
+      { "id": "frontend", "name": "Frontend" },
+      { "id": "backend", "name": "Backend" },
+      { "id": "database", "name": "Base de Datos" },
+      { "id": "tools", "name": "Herramientas" },
+      { "id": "ai", "name": "IA & Automatización" }
+    ],
+    "list": [
+      {
+        "name": "PHP",
+        "level": "Experto",
+        "category": "backend",
+        "years": "5+ años",
+        "description": "PHP es mi punto fuerte, con aproximadamente cinco años de experiencia. Lo he utilizado tanto para crear aplicaciones de manera nativa con JS, AJAX, jQuery, CSS y HTML, como para desarrollar RESTful APIs.",
+        "isTop": true,
+        "icon": "🐘"
+      },
+      {
+        "name": "REST APIs",
+        "level": "Experto",
+        "category": "backend",
+        "years": "3+ años",
+        "description": "Desarrollo de APIs REST es lo que más he hecho en mi carrera profesional. He creado y evolucionado múltiples APIs tanto en PHP como en Java, orientadas a microservicios con frameworks propios y estándares de la industria.",
+        "isTop": true,
+        "icon": "🔗"
+      },
+      {
+        "name": "MySQL",
+        "level": "Avanzado",
+        "category": "database",
+        "years": "5+ años",
+        "description": "Mi experiencia con bases de datos se ha centrado en MySQL. He desarrollado bases de datos completas para especificaciones de productos y he utilizado MySQL de manera habitual en combinación con PHP/JAVA para el tratamiento de datos.",
+        "isTop": true,
+        "icon": "🗄️"
+      },
+      {
+        "name": "Apache/Servidores Web",
+        "level": "Avanzado",
+        "category": "tools",
+        "years": "5+ años",
+        "description": "Configuración y administración de servidores web, optimización de rendimiento, seguridad y despliegue de aplicaciones web.",
+        "icon": "🌐"
+      },
+      {
+        "name": "Laravel",
+        "level": "Avanzado",
+        "category": "backend",
+        "years": "2+ años",
+        "description": "Parte experiencia en el ámbito de desarrollo tambien ha sido realizar evoluciones de RESTful APIs utilizando el framework Laravel.",
+        "icon": "🔧"
+      },
+      {
+        "name": "Vue.js",
+        "level": "Avanzado",
+        "category": "frontend",
+        "years": "2+ años",
+        "description": "En el ámbito de desarrollo frontend, he estado involucrado en el desarrollo activo de la principal aplicación de ATLSGLOBAL S, utilizando Vue durante aproximadamente un año y medio.",
+        "icon": "💚"
+      },
+      {
+        "name": "JavaScript",
+        "level": "Intermedio",
+        "category": "frontend",
+        "years": "4+ años",
+        "description": "En cuanto a JavaScript (JS), he trabajado extensamente en diversos contextos, desde el desarrollo de aplicaciones nativas en PHP con jQuery hasta la implementación de potentes frameworks como Vue y React.",
+        "icon": "💛"
+      },
+      {
+        "name": "HTML & CSS",
+        "level": "Intermedio",
+        "category": "frontend",
+        "years": "5+ años",
+        "description": "Fundamentos sólidos en HTML y CSS. Con la llegada de la IA generativa, considero que el conocimiento experto en estas tecnologías queda en segundo plano, ya que es muy fácil generar y aprender código HTML/CSS con herramientas modernas.",
+        "icon": "🎨"
+      },
+      {
+        "name": "Python",
+        "level": "Intermedio",
+        "category": "backend",
+        "years": "2+ años",
+        "description": "En cuanto a Python, he desarrollado pequeños programas tanto de manera profesional como personal, incluyendo automatizaciones y algunas APIs con Flask.",
+        "icon": "🐍"
+      },
+      {
+        "name": "IA Generativa",
+        "level": "Intermedio",
+        "category": "ai",
+        "years": "1+ año",
+        "description": "Experiencia con GPT, Gemini, Copilot y modelos open source para automatización, desarrollo asistido y optimización de procesos. Implementación de soluciones de IA para mejorar la productividad y los flujos de trabajo.",
+        "icon": "🤖"
+      },
+      {
+        "name": "Java",
+        "level": "Básico",
+        "category": "backend",
+        "years": "2+ año",
+        "description": "En el último año, he utilizado Java para realizar evoluciones y correcciones en APIs, implementando daemons configurados con cron para realizar acciones como el procesamiento de archivos.",
+        "icon": "☕"
+      },
+      {
+        "name": "Postman",
+        "level": "Avanzado",
+        "category": "tools",
+        "years": "3+ años",
+        "description": "Herramienta esencial para el desarrollo y testing de APIs. Creación de colecciones, automatización de pruebas y documentación de endpoints.",
+        "icon": "📮"
+      },
+      {
+        "name": "React",
+        "level": "Básico",
+        "category": "frontend",
+        "years": "0+ años",
+        "description": "Conocimientos básicos en React. Aunque mi experiencia es principalmente personal, estoy trabajando en proyectos para ampliar mis conocimientos en este framework.",
+        "icon": "⚛️"
+      },
+      {
+        "name": "Docker",
+        "level": "Básico",
+        "category": "tools",
+        "years": "0+ años",
+        "description": "Conocimientos básicos en containerización y despliegue de aplicaciones. Actualmente ampliando conocimientos en esta tecnología.",
+        "icon": "🐳"
+      },
+      {
+        "name": "Linux",
+        "level": "Avanzado",
+        "category": "tools",
+        "years": "5+ años",
+        "description": "Administración de servidores, configuración de entornos de desarrollo y despliegue de aplicaciones en distribuciones Linux. Experiencia en gestión de servicios y automatización de tareas.",
+        "icon": "🐧"
+      },
+      {
+        "name": "Git",
+        "level": "Avanzado",
+        "category": "tools",
+        "years": "5+ años",
+        "description": "Control de versiones avanzado, gestión de repositorios, resolución de conflictos complejos y flujos de trabajo colaborativos en equipos de desarrollo.",
+        "icon": "📊"
+      },
+      {
+        "name": "Workbench",
+        "level": "Avanzado",
+        "category": "tools",
+        "years": "5+ años",
+        "description": "Interfaz gráfica para el manejo de base de datos.",
+        "icon": "📊"
+      },
+      {
+        "name": "VS Code",
+        "level": "Avanzado",
+        "category": "tools",
+        "years": "4+ años",
+        "description": "Uso avanzado de IDEs modernos con integración de IA para desarrollo. Configuración personalizada de entornos de desarrollo para maximizar la productividad.",
+        "icon": "💻"
+      },{
+        "name": "Winsurf",
+        "level": "Avanzado",
+        "category": "tools",
+        "years": "1+ años",
+        "description": "Uso avanzado de IDEs modernos con integración de IA para desarrollo. Configuración personalizada de entornos de desarrollo para maximizar la productividad. ¡MI FAVORITO!",
+        "icon": "💻"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "subtitle": "Mi trayectoria profesional refleja un crecimiento constante y una adaptación continua a las nuevas tecnologías y desafíos del sector.",
+    "list": [
+      {
+        "company": "ATLS GLOBAL SL",
+        "position": "Full Stack Developer",
+        "period": "2021 - Presente",
+        "location": "España",
+        "type": "Tiempo Completo",
+        "description": "Desempeñé un rol clave en la actualización tecnológica del sistema principal de la empresa dentro del entorno ATLS, implementando mejoras significativas al actualizar los sistemas a sus versiones más recientes, lo que resultó en una notable optimización de los tiempos de procesamiento. Entre mis principales responsabilidades se encuentra la creación y evolución de REST APIs en PHP y JAVA, orientadas a microservicios con un framework propio, así como el desarrollo de interfaces front-end en Vue.js, lo que me permitió consolidarme como desarrollador full stack. También implementé automatización de procesos mediante colas, mejorando la eficiencia operativa. Participé activamente en la mayoría de los proyectos de la empresa, desde el desarrollo de nuevas funcionalidades hasta la modificación de sistemas existentes y la resolución de errores críticos, contribuyendo constantemente a la mejora y estabilidad del producto.",
+        "achievements": [
+          "Optimización de tiempos de procesamiento del sistema principal",
+          "Desarrollo de APIs REST con framework propio",
+          "Implementación de automatización de procesos",
+          "Desarrollo frontend con Vue.js",
+          "Investigación e implementación de herramientas de IA generativa"
+        ],
+        "technologies": ["PHP", "Java", "Vue.js", "MySQL", "REST APIs", "IA Generativa", "Python"],
+        "links": {
+          "linkedin": "https://www.linkedin.com/company/at-ls/",
+          "website": "https://www.atls-global.com/"
+        }
+      },
+      {
+        "company": "CLICKEDU",
+        "position": "Desarrollador Web",
+        "period": "2020 - 2021",
+        "location": "España",
+        "type": "Tiempo Completo",
+        "description": "En CLICKEDU, me encargué de la resolución de incidencias en la aplicación educativa principal, gestionando problemas tanto en el backend como en el frontend. Además, realicé mejoras significativas en ambos entornos, optimizando el rendimiento del sistema y garantizando su estabilidad. Utilicé Laravel para implementar soluciones eficientes en el backend y mejorar la estructura y funcionalidad del frontend, contribuyendo a una mejor experiencia de usuario y mayor eficiencia operativa.",
+        "achievements": [
+          "Resolución eficiente de incidencias críticas",
+          "Mejoras en rendimiento del sistema",
+          "Optimización de backend y frontend"
+        ],
+        "technologies": ["Laravel", "PHP", "JavaScript", "MySQL"],
+        "links": {
+          "linkedin": "https://www.linkedin.com/company/clickart/",
+          "website": "https://www.clickedu.net"
+        }
+      },
+      {
+        "company": "FOXTENN",
+        "position": "Técnico de Sistemas",
+        "period": "2019 - 2020",
+        "location": "España",
+        "type": "Tiempo Completo",
+        "description": "En FOXTENN, fui responsable de la instalación y gestión de hardware y software especializado para la recolección de datos en grandes eventos de tenis. Trabajé con su tecnología avanzada de línea electrónica y análisis de rendimiento, utilizando cámaras de alta velocidad y escáneres láser para capturar con precisión el bote de la pelota y los movimientos de los jugadores en tiempo real. Estas implementaciones optimizaron la precisión y velocidad de los análisis, garantizando una captura de datos exacta que cumplía con los más altos estándares de torneos ATP, WTA y ITF.",
+        "achievements": [
+          "Gestión de tecnología en torneos ATP, WTA e ITF",
+          "Implementación de sistemas de captura en tiempo real",
+          "Optimización de precisión en análisis deportivo"
+        ],
+        "technologies": ["Hardware Especializado", "Sistemas de Captura", "Análisis en Tiempo Real"],
+        "links": {
+          "linkedin": "https://www.linkedin.com/company/foxtenn-bgreen-sl/",
+          "website": "http://www.foxtenn.com/company"
+        }
+      },
+      {
+        "company": "GMEDIA SL",
+        "position": "Desarrollador Web",
+        "period": "2018 - 2019",
+        "location": "España",
+        "type": "Prácticas (Formación dual)",
+        "description": "En GMEDIA SL, desempeñé un rol clave en la creación y personalización de páginas web para diversos clientes, ofreciendo soluciones a medida con WordPress y desarrollando temas personalizados según las necesidades específicas de cada proyecto. Además, me enfoqué en asegurar una excelente experiencia de usuario mediante el uso de tecnologías modernas, contribuyendo a la transformación digital de múltiples negocios.",
+        "achievements": [
+          "Desarrollo de soluciones web personalizadas",
+          "Creación de temas WordPress a medida",
+          "Transformación digital de múltiples negocios"
+        ],
+        "technologies": ["WordPress", "PHP", "JavaScript", "CSS", "HTML"],
+        "links": {
+          "linkedin": "https://www.linkedin.com/company/gmedia-es/",
+          "website": "https://www.gmedia.es"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "title": "¿Hablamos?",
+    "subtitle": "Estoy siempre abierto a nuevas oportunidades y colaboraciones. No dudes en contactarme si tienes un proyecto interesante o simplemente quieres conectar.",
+    "methods": [
+      {
+        "label": "Email",
+        "value": "caldeiro@pm.me",
+        "href": "mailto:caldeiro@pm.me",
+        "copyable": true
+      },
+      {
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/caldeiro-luism",
+        "href": "https://www.linkedin.com/in/caldeiro-luism/",
+        "copyable": false
+      },
+      {
+        "label": "GitHub",
+        "value": "github.com/caldeix",
+        "href": "https://github.com/caldeix",
+        "copyable": false
+      }
+    ],
+    "cta": {
+      "primary": "Enviar Email",
+      "secondary": "Descargar CV"
+    }
+  },
+  "footer": {
+    "copyright": "Luis Miguel Caldeiro Fernández",
+    "cookiePolicy": "Política de cookies",
+    "privacyPolicy": "Política de privacidad"
+  },
+  "privacy": {
+    "cookiePolicy": {
+      "title": "Política de cookies",
+      "acceptButton": "Aceptar",
+      "description": "Si contínuas navegando aceptas la política de cookies.",
+      "content": "Una cookie es un pequeño fichero de texto que se almacena en su navegador cuando visita casi cualquier página web. Su utilidad es que la web sea capaz de recordar su visita cuando vuelva a navegar por esa página.",
+      "usage": "Este sitio web no utiliza cookies propias ni de terceros para el seguimiento de usuarios."
+    },
+    "privacyPolicy": {
+      "title": "Política de Privacidad",
+      "closeButton": "Cerrar",
+      "lastUpdated": "Última actualización: 25/08/2024",
+      "sections": [
+        {
+          "title": "1. Introducción",
+          "content": "Bienvenido a mi portafolio web. En este sitio, me comprometo a respetar tu privacidad. Esta política describe cómo se maneja tu información al interactuar con mi sitio web."
+        },
+        {
+          "title": "2. Información Recopilada",
+          "content": "Este sitio web no recopila, almacena ni procesa ninguna información personal de los usuarios."
+        }
+      ]
+    }
+  },
+  "links": {
+    "cv": "https://drive.google.com/file/d/1n9BE79HED3G1uh3pOSH1gco7Fs_jv-wJ/view?usp=sharing"
+  },
+  "messages": {
+    "emailCopied": "¡Copiado al portapapeles!",
+    "copyError": "Error al copiar"
+  }
+}
