@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export",
+    "predeploy": "npm run export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -69,10 +72,5 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   },
-  "homepage": "https://caldeix.github.io/me",
-  "scripts": {
-    "export": "next build && next export",
-    "predeploy": "npm run export",
-    "deploy": "gh-pages -d out"
-  }
+  "homepage": "https://caldeix.github.io/me"
 }
