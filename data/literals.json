@@ -1,8 +1,8 @@
 {
   "personal": {
     "name": "Luis Miguel Caldeiro Fernández",
-    "firstName": "Luis Miguel Caldeiro",
-    "lastName": "Fernández",
+    "firstName": "Luis Miguel Caldeiro Fernández",
+    "lastName": "",
     "role": "Full Stack Developer",
     "email": "caldeiro@pm.me",
     "profileImage": "https://media.licdn.com/dms/image/v2/C4D03AQGJ9B5PJj0K1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1631016421362?e=1754524800&v=beta&t=Lw9rb55Ip6TxuG6yl3xpKt9zkiJI3LGifitz2yRcsLg"
@@ -83,7 +83,7 @@
         "icon": "🗄️"
       },
       {
-        "name": "Apache/Servidores Web",
+        "name": "Apache",
         "level": "Avanzado",
         "category": "tools",
         "years": "5+ años",

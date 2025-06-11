@@ -17,9 +17,7 @@ export default function AboutSection({ data }: AboutSectionProps) {
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-slate-100 mb-4 transition-colors duration-300">
             {data.title}
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto transition-colors duration-300">
-            {data.subtitle}
-          </p>
+         
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
