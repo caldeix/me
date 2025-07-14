@@ -3,13 +3,13 @@
     "name": "Luis Miguel Caldeiro Fernández",
     "firstName": "Luis Miguel Caldeiro Fernández",
     "lastName": "",
-    "role": "Full Stack Developer",
+    "role": "Full Stack Developer & IA Enthusiast",
     "email": "caldeiro@pm.me",
     "profileImage": "https://media.licdn.com/dms/image/v2/C4D03AQGJ9B5PJj0K1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1631016421362?e=1754524800&v=beta&t=Lw9rb55Ip6TxuG6yl3xpKt9zkiJI3LGifitz2yRcsLg"
   },
   "hero": {
-    "description": "Especializado en desarrollo backend y soluciones de IA. Actualmente trabajando en ATLS GLOBAL SL, enfocado en la automatización de procesos y optimización de servicios. Y desarrollando y optimizando APIs internas",
-    "company": "ATLS GLOBAL SL",
+    "description": "Soy programador PHP con más de 5 años de experiencia especializado en desarrollo back-end, principalmente en la creación de RESTful APIs y gestión de bases de datos MySQL. Me adapto con facilidad a otros lenguajes y tecnologías, ya que domino la lógica de programación y me enfoco en la calidad y eficiencia del código. A nivel front-end, he trabajado con Vue.js, así como con PHP nativo, JavaScript, CSS3 y HTML5 para desarrollar interfaces funcionales y responsivas. Además, cuento con experiencia en Python, donde he diseñado sistemas de automatización e integración con modelos de lenguaje como GPT, Gemini o Llama, así como en la construcción de workflows automatizados mediante N8N.Mi perfil combina versatilidad tecnológica, enfoque en la optimización de procesos y capacidad para abordar proyectos de principio a fin.",
+    "company": "",
     "cta": {
       "primary": "Conoce más sobre mí",
       "secondary": "Descargar CV"
@@ -17,11 +17,11 @@
   },
   "about": {
     "title": "Sobre Mí",
-    "subtitle": "Soy un desarrollador full stack apasionado por crear soluciones tecnológicas que marquen la diferencia. Mi experiencia abarca desde el desarrollo frontend hasta la implementación de sistemas backend complejos.",
+    "subtitle": "Soy un desarrollador full stack apasionado por crear soluciones tecnológicas que marquen la diferencia y estar en constante aprendizaje.",
     "sectionTitle": "Mi Trayectoria",
     "description": [
       "Con más de 5 años de experiencia en el desarrollo web, he trabajado en proyectos que van desde aplicaciones educativas hasta sistemas de gestión empresarial complejos.",
-      "Actualmente en ATLS GLOBAL SL, lidero iniciativas de modernización tecnológica y desarrollo de soluciones de IA para automatización de procesos. Aparte una de mis principales funciones en mi trayectoria ha sido crear RestFull API's.",
+      "Actualmente en ATLS GLOBAL SL, lidero iniciativas de modernización tecnológica y desarrollo de soluciones de IA para automatización de procesos. Aparte una de mis principales funciones en mi trayectoria ha sido crear RestFull API's con front-end en vue o php nativo.",
       "Mi enfoque se centra en escribir código limpio, mantenible y escalable, siempre buscando las mejores prácticas y tecnologías más actuales del mercado."
     ],
     "highlights": [
@@ -323,30 +323,6 @@
     "copyright": "Luis Miguel Caldeiro Fernández",
     "cookiePolicy": "Política de cookies",
     "privacyPolicy": "Política de privacidad"
-  },
-  "privacy": {
-    "cookiePolicy": {
-      "title": "Política de cookies",
-      "acceptButton": "Aceptar",
-      "description": "Si contínuas navegando aceptas la política de cookies.",
-      "content": "Una cookie es un pequeño fichero de texto que se almacena en su navegador cuando visita casi cualquier página web. Su utilidad es que la web sea capaz de recordar su visita cuando vuelva a navegar por esa página.",
-      "usage": "Este sitio web no utiliza cookies propias ni de terceros para el seguimiento de usuarios."
-    },
-    "privacyPolicy": {
-      "title": "Política de Privacidad",
-      "closeButton": "Cerrar",
-      "lastUpdated": "Última actualización: 25/08/2024",
-      "sections": [
-        {
-          "title": "1. Introducción",
-          "content": "Bienvenido a mi portafolio web. En este sitio, me comprometo a respetar tu privacidad. Esta política describe cómo se maneja tu información al interactuar con mi sitio web."
-        },
-        {
-          "title": "2. Información Recopilada",
-          "content": "Este sitio web no recopila, almacena ni procesa ninguna información personal de los usuarios."
-        }
-      ]
-    }
   },
   "links": {
     "cv": "https://drive.google.com/file/d/1n9BE79HED3G1uh3pOSH1gco7Fs_jv-wJ/view?usp=sharing"
