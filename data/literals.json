@@ -330,5 +330,41 @@
   "messages": {
     "emailCopied": "¡Copiado al portapapeles!",
     "copyError": "Error al copiar"
+  },
+  "privacy": {
+    "cookiePolicy": {
+      "title": "Política de Cookies",
+      "acceptButton": "Aceptar",
+      "description": "Este sitio web no utiliza cookies ni tecnologías de rastreo.",
+      "content": "Navega con tranquilidad sabiendo que tu privacidad está protegida. No recopilamos ni almacenamos información personal a través de cookies.",
+      "usage": "Tu privacidad es importante para nosotros. Este sitio web funciona sin cookies."
+    },
+    "privacyPolicy": {
+      "title": "Política de Privacidad",
+      "closeButton": "Cerrar",
+      "lastUpdated": "Última actualización: 19 de agosto de 2024",
+      "sections": [
+        {
+          "title": "1. Información que recopilamos",
+          "content": "Este sitio web no recopila ni almacena información personal de los visitantes. No utilizamos formularios de contacto, análisis de tráfico ni ninguna otra herramienta que requiera el procesamiento de datos personales."
+        },
+        {
+          "title": "2. Uso de la información",
+          "content": "Al no recopilar información personal, no hay datos que procesar o utilizar. Este sitio web es meramente informativo y no requiere de la interacción del usuario más allá de la navegación básica."
+        },
+        {
+          "title": "3. Compartir información",
+          "content": "No compartimos información personal porque no recopilamos ningún dato de los visitantes de este sitio web."
+        },
+        {
+          "title": "4. Seguridad",
+          "content": "Aunque no recopilamos datos personales, el sitio web utiliza conexiones seguras (HTTPS) para garantizar una navegación segura para todos los visitantes."
+        },
+        {
+          "title": "5. Contacto",
+          "content": "Si tienes alguna pregunta sobre esta política de privacidad, puedes contactarme a través de los enlaces proporcionados en la sección de contacto."
+        }
+      ]
+    }
   }
 }
