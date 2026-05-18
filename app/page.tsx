@@ -404,7 +404,7 @@ export default function Page() {
             </h1>
 
             <p className="tagline">
-              {new Date().getFullYear() - 2020}+ yrs · PHP · REST APIs · Vue.js · Python · LLMs
+              {new Date().getFullYear() - 2020}+ yrs · PHP · IA · MySQL · REST API
             </p>
 
             <div className="cta-group">
@@ -434,6 +434,23 @@ export default function Page() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* ── PERFIL ── */}
+      <section className="section" aria-label="Perfil profesional">
+        <h2 className="section-label">Perfil</h2>
+        <p className="profile-text">
+          Estratega tecnológico y arquitecto de software con más de {new Date().getFullYear() - 2020} años de experiencia
+          impulsando la escalabilidad en entornos <span className="kw">SaaS</span>. Mi trayectoria combina un dominio
+          profundo del ecosistema <span className="kw">PHP</span> —desde la creación de{" "}
+          <span className="kw">frameworks propios</span> hasta <span className="kw">microservicios</span> complejos—
+          con una visión firmemente orientada a negocio. Actualmente curso el grado en{" "}
+          <span className="kw">Ingeniería Informática</span>, compaginándolo con el autoaprendizaje de sistemas de{" "}
+          <span className="kw">IA</span> y el codiseño de integraciones con{" "}
+          <span className="kw">LLMs</span> para optimizar procesos técnicos y comerciales. Mi objetivo es liderar la
+          definición técnica y estratégica de plataformas, diseñando arquitecturas innovadoras que transformen las
+          prioridades de negocio en soluciones de alto impacto.
+        </p>
       </section>
 
       {/* ── STACK ── */}
