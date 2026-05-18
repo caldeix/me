@@ -55,160 +55,30 @@
       { "id": "ai", "name": "IA & Automatización" }
     ],
     "list": [
-      {
-        "name": "PHP",
-        "level": "Experto",
-        "category": "backend",
-        "years": "5+ años",
-        "description": "PHP es mi punto fuerte, con aproximadamente cinco años de experiencia. Lo he utilizado tanto para crear aplicaciones de manera nativa con JS, AJAX, jQuery, CSS y HTML, como para desarrollar RESTful APIs.",
-        "isTop": true,
-        "icon": "🐘"
-      },
-      {
-        "name": "REST APIs",
-        "level": "Experto",
-        "category": "backend",
-        "years": "3+ años",
-        "description": "Desarrollo de APIs REST es lo que más he hecho en mi carrera profesional. He creado y evolucionado múltiples APIs tanto en PHP como en Java, orientadas a microservicios con frameworks propios y estándares de la industria.",
-        "isTop": true,
-        "icon": "🔗"
-      },
-      {
-        "name": "MySQL",
-        "level": "Avanzado",
-        "category": "database",
-        "years": "5+ años",
-        "description": "Mi experiencia con bases de datos se ha centrado en MySQL. He desarrollado bases de datos completas para especificaciones de productos y he utilizado MySQL de manera habitual en combinación con PHP/JAVA para el tratamiento de datos.",
-        "isTop": true,
-        "icon": "🗄️"
-      },
-      {
-        "name": "Apache",
-        "level": "Avanzado",
-        "category": "tools",
-        "years": "5+ años",
-        "description": "Configuración y administración de servidores web, optimización de rendimiento, seguridad y despliegue de aplicaciones web.",
-        "icon": "🌐"
-      },
-      {
-        "name": "Laravel",
-        "level": "Avanzado",
-        "category": "backend",
-        "years": "2+ años",
-        "description": "Parte experiencia en el ámbito de desarrollo tambien ha sido realizar evoluciones de RESTful APIs utilizando el framework Laravel.",
-        "icon": "🔧"
-      },
-      {
-        "name": "Vue.js",
-        "level": "Avanzado",
-        "category": "frontend",
-        "years": "2+ años",
-        "description": "En el ámbito de desarrollo frontend, he estado involucrado en el desarrollo activo de la principal aplicación de ATLSGLOBAL S, utilizando Vue durante aproximadamente un año y medio.",
-        "icon": "💚"
-      },
-      {
-        "name": "JavaScript",
-        "level": "Intermedio",
-        "category": "frontend",
-        "years": "4+ años",
-        "description": "En cuanto a JavaScript (JS), he trabajado extensamente en diversos contextos, desde el desarrollo de aplicaciones nativas en PHP con jQuery hasta la implementación de potentes frameworks como Vue y React.",
-        "icon": "💛"
-      },
-      {
-        "name": "HTML & CSS",
-        "level": "Intermedio",
-        "category": "frontend",
-        "years": "5+ años",
-        "description": "Fundamentos sólidos en HTML y CSS. Con la llegada de la IA generativa, considero que el conocimiento experto en estas tecnologías queda en segundo plano, ya que es muy fácil generar y aprender código HTML/CSS con herramientas modernas.",
-        "icon": "🎨"
-      },
-      {
-        "name": "Python",
-        "level": "Intermedio",
-        "category": "backend",
-        "years": "2+ años",
-        "description": "En cuanto a Python, he desarrollado pequeños programas tanto de manera profesional como personal, incluyendo automatizaciones y algunas APIs con Flask.",
-        "icon": "🐍"
-      },
-      {
-        "name": "IA Generativa",
-        "level": "Intermedio",
-        "category": "ai",
-        "years": "1+ año",
-        "description": "Experiencia con GPT, Gemini, Copilot y modelos open source para automatización, desarrollo asistido y optimización de procesos. Implementación de soluciones de IA para mejorar la productividad y los flujos de trabajo.",
-        "icon": "🤖"
-      },
-      {
-        "name": "Java",
-        "level": "Básico",
-        "category": "backend",
-        "years": "2+ año",
-        "description": "En el último año, he utilizado Java para realizar evoluciones y correcciones en APIs, implementando daemons configurados con cron para realizar acciones como el procesamiento de archivos.",
-        "icon": "☕"
-      },
-      {
-        "name": "Postman",
-        "level": "Avanzado",
-        "category": "tools",
-        "years": "3+ años",
-        "description": "Herramienta esencial para el desarrollo y testing de APIs. Creación de colecciones, automatización de pruebas y documentación de endpoints.",
-        "icon": "📮"
-      },
-      {
-        "name": "React",
-        "level": "Básico",
-        "category": "frontend",
-        "years": "0+ años",
-        "description": "Conocimientos básicos en React. Aunque mi experiencia es principalmente personal, estoy trabajando en proyectos para ampliar mis conocimientos en este framework.",
-        "icon": "⚛️"
-      },
-      {
-        "name": "Docker",
-        "level": "Básico",
-        "category": "tools",
-        "years": "0+ años",
-        "description": "Conocimientos básicos en containerización y despliegue de aplicaciones. Actualmente ampliando conocimientos en esta tecnología.",
-        "icon": "🐳"
-      },
-      {
-        "name": "Linux",
-        "level": "Avanzado",
-        "category": "tools",
-        "years": "5+ años",
-        "description": "Administración de servidores, configuración de entornos de desarrollo y despliegue de aplicaciones en distribuciones Linux. Experiencia en gestión de servicios y automatización de tareas.",
-        "icon": "🐧"
-      },
-      {
-        "name": "Git",
-        "level": "Avanzado",
-        "category": "tools",
-        "years": "5+ años",
-        "description": "Control de versiones avanzado, gestión de repositorios, resolución de conflictos complejos y flujos de trabajo colaborativos en equipos de desarrollo.",
-        "icon": "📊"
-      },
-      {
-        "name": "Workbench",
-        "level": "Avanzado",
-        "category": "tools",
-        "years": "5+ años",
-        "description": "Interfaz gráfica para el manejo de base de datos.",
-        "icon": "📊"
-      },
-      {
-        "name": "VS Code",
-        "level": "Avanzado",
-        "category": "tools",
-        "years": "4+ años",
-        "description": "Uso avanzado de IDEs modernos con integración de IA para desarrollo. Configuración personalizada de entornos de desarrollo para maximizar la productividad.",
-        "icon": "💻"
-      },{
-        "name": "Winsurf",
-        "level": "Avanzado",
-        "category": "tools",
-        "years": "1+ años",
-        "description": "Uso avanzado de IDEs modernos con integración de IA para desarrollo. Configuración personalizada de entornos de desarrollo para maximizar la productividad. ¡MI FAVORITO!",
-        "icon": "💻"
-      }
+      { "name": "PHP",            "category": "backend",  "stars": 5,   "description": "PHP es mi punto fuerte, con aproximadamente cinco años de experiencia en desarrollo nativo y RESTful APIs.", "isTop": true },
+      { "name": "MySQL",          "category": "database", "stars": 5,   "description": "Bases de datos completas, optimización de queries y tratamiento de datos en combinación con PHP y Java.", "isTop": true },
+      { "name": "Git",            "category": "tools",    "stars": 5,   "description": "Control de versiones avanzado, gestión de repositorios y flujos de trabajo colaborativos." },
+      { "name": "Linux",          "category": "tools",    "stars": 4.5, "description": "Administración de servidores, configuración de entornos de desarrollo y despliegue de aplicaciones." },
+      { "name": "Apache",         "category": "tools",    "stars": 4.5, "description": "Configuración y administración de servidores web, optimización de rendimiento y seguridad." },
+      { "name": "REST API",       "category": "backend",  "stars": 4.5, "description": "Diseño y evolución de REST APIs orientadas a microservicios con frameworks propios y estándares de la industria.", "isTop": true },
+      { "name": "Python",         "category": "backend",  "stars": 4,   "description": "Automatizaciones, APIs con Flask e integración con modelos de lenguaje como GPT, Gemini y Claude." },
+      { "name": "Postman/Apidog", "category": "tools",    "stars": 4,   "description": "Testing de APIs, creación de colecciones, automatización de pruebas y documentación de endpoints." },
+      { "name": "VS Code",        "category": "tools",    "stars": 4,   "description": "IDE principal con integración de IA para desarrollo. Configuración avanzada para maximizar productividad." },
+      { "name": "Claude AI",      "category": "ai",       "stars": 4,   "description": "Integración de Claude API, uso diario como asistente de desarrollo y orquestación de agentes IA." },
+      { "name": "Laravel",        "category": "backend",  "stars": 3.5, "description": "Evoluciones de RESTful APIs, resolución de incidencias y mejoras de rendimiento." },
+      { "name": "Docker",         "category": "tools",    "stars": 3.5, "description": "Containerización y despliegue de aplicaciones. Entornos de desarrollo reproducibles." },
+      { "name": "Windsurf",       "category": "tools",    "stars": 3.5, "description": "IDE AI-first por Codeium. Editor favorito para desarrollo asistido por IA." },
+      { "name": "AI Coding",      "category": "ai",       "stars": 3.5, "description": "Uso avanzado de herramientas de codificación asistida: Copilot, Cursor, Windsurf y Claude." },
+      { "name": "Obsidian",       "category": "tools",    "stars": 3,   "description": "Editor de notas con vaults para gestión del conocimiento, documentación y PKM." },
+      { "name": "Vue.js",         "category": "frontend", "stars": 2.5, "description": "Desarrollo activo de SPA en el entorno ATLS GLOBAL con Vue 2/3 durante más de un año." },
+      { "name": "Java",           "category": "backend",  "stars": 2,   "description": "Evoluciones y correcciones en APIs, implementación de daemons con cron para procesamiento de archivos." },
+      { "name": "JavaScript",     "category": "frontend", "stars": 2,   "description": "Desarrollo nativo con jQuery, Vue y React en múltiples contextos." },
+      { "name": "N8N",            "category": "ai",       "stars": 2,   "description": "Automatización de workflows, integración de servicios y orquestación de pipelines de datos." },
+      { "name": "Jupyter",        "category": "ai",       "stars": 2,   "description": "Notebooks para exploración de datos, prototyping de modelos LLM y análisis con Python." },
+      { "name": "TypeScript",     "category": "frontend", "stars": 1,   "description": "Uso básico en proyectos Next.js/React. Tipado estático para mejorar la mantenibilidad." },
+      { "name": "React",          "category": "frontend", "stars": 1,   "description": "Conocimientos básicos. Experiencia principalmente personal en proyectos de aprendizaje." },
+      { "name": "Next.js",        "category": "frontend", "stars": 1,   "description": "Este mismo portfolio. Static export para GitHub Pages." },
+      { "name": "OpenClaw",       "category": "tools",    "stars": 0.5, "description": "Exploración inicial. Herramienta en fase de evaluación." }
     ]
   },
   "experience": {

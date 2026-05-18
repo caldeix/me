@@ -197,7 +197,7 @@ h1 {
 /* ── STACK ────────────────────────────────────────────────────── */
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(82px, 1fr));
   gap: 0.75rem;
 }
 
@@ -205,8 +205,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.9rem 0.4rem;
+  gap: 0.3rem;
+  padding: 0.85rem 0.4rem 0.7rem;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 0.5rem;
@@ -228,11 +228,73 @@ h1 {
 }
 
 .tech-name {
-  font-size: 0.6rem;
+  font-size: 0.58rem;
   color: var(--text-muted);
   text-align: center;
-  letter-spacing: 0.03em;
-  line-height: 1.2;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+}
+
+/* ── STAR RATING ──────────────────────────────────────────────── */
+.star-rating {
+  display: flex;
+  gap: 1.5px;
+  font-size: 0.5rem;
+  color: var(--primary);
+  line-height: 1;
+  margin-top: 1px;
+}
+
+/* ── DUAL ICONS (Postman / Apidog) ────────────────────────────── */
+.tech-dual {
+  position: relative;
+  width: 38px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.tech-dual-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.tech-dual-main img,
+.tech-dual-main .tech-fa-icon,
+.tech-dual-main .tech-initial {
+  width: 22px;
+  height: 22px;
+}
+
+.tech-dual-sub {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.88;
+}
+
+.tech-dual-sub img,
+.tech-dual-sub .tech-fa-icon,
+.tech-dual-sub .tech-initial {
+  width: 18px;
+  height: 18px;
+}
+
+/* ── FA / INITIAL FALLBACK ICONS ──────────────────────────────── */
+.tech-fa-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: inherit;
 }
 
 /* ── EXPERIENCE ───────────────────────────────────────────────── */
@@ -294,24 +356,17 @@ h1 {
   display: block;
 }
 
-.job-points {
-  margin-bottom: 0.7rem;
-}
-
-.job-points li {
+/* ── JOB DESCRIPTION ──────────────────────────────────────────── */
+.job-desc {
   font-size: 0.8rem;
   color: var(--text-muted);
-  padding-left: 0.8rem;
-  position: relative;
-  margin-bottom: 0.2rem;
-  line-height: 1.5;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
 }
 
-.job-points li::before {
-  content: '–';
-  position: absolute;
-  left: 0;
-  color: var(--text-dim);
+.kw {
+  color: var(--primary);
+  font-weight: 500;
 }
 
 .tech-tags {
@@ -394,6 +449,6 @@ h1 {
   .job-header    { flex-direction: column; gap: 0.25rem; }
 
   .tech-grid {
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
   }
 }
