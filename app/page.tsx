@@ -195,18 +195,17 @@ const EXPERIENCE: Job[] = [
     url: "https://www.atls-global.com/",
     tech: ["PHP", "Java", "Vue.js", "MySQL", "Python", "REST APIs"],
     description:
-      "Desempeñé un rol clave en la actualización tecnológica del sistema principal de la empresa, implementando mejoras significativas que resultaron en una notable optimización de los tiempos de procesamiento. Mis principales responsabilidades incluyen la creación y evolución de REST APIs en PHP y Java orientadas a microservicios con un framework propio, así como el desarrollo de interfaces frontend con Vue.js, consolidándome como desarrollador full stack. También implementé automatización de procesos mediante colas y participé activamente en la investigación e implementación de herramientas de IA generativa.",
+      "Desempeño un rol clave en la modernización y evolución tecnológica del ecosistema SaaS principal de la compañía. Lidero el diseño e implementación de nuevos productos de alto impacto, incluyendo sistemas de post-revisión de traducciones basados en Inteligencia Artificial Generativa, y optimizo la arquitectura del backend y frontend para maximizar el rendimiento del sistema.",
     keywords: [
-      "actualización tecnológica",
-      "REST APIs",
-      "PHP",
-      "Java",
-      "microservicios",
-      "framework propio",
-      "Vue.js",
-      "full stack",
-      "automatización de procesos",
-      "IA generativa",
+      "modernización",
+      "evolución tecnológica",
+      "ecosistema SaaS",
+      "diseño e implementación",
+      "post-revisión de traducciones",
+      "Inteligencia Artificial Generativa",
+      "backend",
+      "frontend",
+      "rendimiento",
     ],
   },
   {
@@ -259,6 +258,102 @@ const EXPERIENCE: Job[] = [
   },
 ]
 
+/* ── EDUCATION ────────────────────────────────────────────────── */
+interface EduItem {
+  kind: "degree" | "course"
+  title: string
+  org: string
+  year: string
+  badge?: string
+  location?: string
+  current?: boolean
+  certUrl?: string
+  platformSlug?: string
+  platformColor?: string
+}
+
+/* sorted newest → oldest */
+const EDUCATION: EduItem[] = [
+  {
+    kind: "degree",
+    badge: "BACHELOR",
+    title: "Ingeniería Informática",
+    org: "Universitat Digital Europea",
+    location: "Andorra",
+    year: "2024 — 2029",
+    current: true,
+    certUrl: "https://universidadeuropeadigital.com/",
+  },
+  {
+    kind: "course",
+    title: "Fundamentos profesionales de IA generativa",
+    org: "Microsoft & LinkedIn Learning",
+    year: "2025",
+    certUrl:
+      "https://www.linkedin.com/learning/certificates/93a41b31c8805e15ecde8898b6435fc61566ba93c543e7d5f301da53703cfcd3",
+    platformSlug: "microsoft",
+    platformColor: "00A4EF",
+  },
+  {
+    kind: "course",
+    title: "IA Generativa: ChatGPT, Midjourney y más!",
+    org: "Udemy",
+    year: "2024",
+    certUrl:
+      "https://media.licdn.com/dms/image/v2/D4D2DAQExP1aIcbsAzQ/profile-treasury-document-images_1280/B4DZd3v6oQGgAY-/1/1750060740695?e=1779926400&v=beta&t=RYwLPmRwaJP_YPja_yB-0MJPTAthqnEyXhPWSmmFeUY",
+    platformSlug: "udemy",
+    platformColor: "A435F0",
+  },
+  {
+    kind: "course",
+    title: "Docker for the Absolute Beginner — Hands On",
+    org: "Udemy",
+    year: "2022",
+    certUrl: "https://www.udemy.com/certificate/UC-3155e7a2-8495-4b22-b76e-39d21420e699/",
+    platformSlug: "udemy",
+    platformColor: "A435F0",
+  },
+  {
+    kind: "course",
+    title: "Master en PHP, SQL, POO, MVC, Laravel, Symfony, WordPress+",
+    org: "Udemy",
+    year: "2021",
+    certUrl: "https://www.udemy.com/certificate/UC-33df8af0-8056-4347-8221-310c29e8c56a/",
+    platformSlug: "udemy",
+    platformColor: "A435F0",
+  },
+  {
+    kind: "degree",
+    badge: "CFGS · DAM",
+    title: "Desarrollo de Aplicaciones Multiplataforma",
+    org: "Ins Joan d'Austria",
+    year: "2019",
+  },
+  {
+    kind: "course",
+    title: "Flexbox desde 0",
+    org: "Udemy",
+    year: "2018",
+    certUrl: "https://www.udemy.com/certificate/UC-FFV2XFER/",
+    platformSlug: "udemy",
+    platformColor: "A435F0",
+  },
+  {
+    kind: "degree",
+    badge: "CFGM · SMX",
+    title: "Sistemas Microinformáticos y Redes",
+    org: "Ins Joan d'Austria",
+    year: "2017",
+  },
+  {
+    kind: "degree",
+    badge: "ESO",
+    title: "",
+    org: "Ins Sant Josep de Gràcia",
+    year: "2015",
+  },
+]
+
 /* ── PAGE ──────────────────────────────────────────────────────── */
 export default function Page() {
   const [copied, setCopied] = useState(false)
@@ -306,7 +401,7 @@ export default function Page() {
           />
 
           <div className="hero-content">
-            <span className="overline">Full Stack Developer &amp; AI Engineer</span>
+            <span className="overline">Full Stack Developer &amp; Future Engineer</span>
 
             <h1>
               Luis Miguel
@@ -467,6 +562,56 @@ export default function Page() {
                   </a>
                 )
               })}
+        </div>
+      </section>
+
+      {/* ── EDUCATION ── */}
+      <section className="section" aria-label="Formación y cursos">
+        <h2 className="section-label">Formación</h2>
+        <div className="edu-timeline">
+          {EDUCATION.map((item, i) => (
+            <div key={i} className={`edu-item edu-${item.kind}`}>
+              <div className="edu-row">
+                <div className="edu-left">
+                  {item.badge && <span className="edu-badge">{item.badge}</span>}
+                  <span className="edu-title">
+                    {item.title}
+                    {item.current && <span className="edu-current">cursando</span>}
+                  </span>
+                  <span className="edu-org">
+                    {item.platformSlug && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={`https://cdn.simpleicons.org/${item.platformSlug}/${item.platformColor}`}
+                        alt={item.org}
+                        width={11}
+                        height={11}
+                        className="edu-platform-icon"
+                        loading="lazy"
+                      />
+                    )}
+                    {item.org}
+                    {item.location && ` · ${item.location}`}
+                  </span>
+                </div>
+                <div className="edu-right">
+                  <time className="edu-year">{item.year}</time>
+                  {item.certUrl && (
+                    <a
+                      href={item.certUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="edu-cert-link"
+                      aria-label={`Certificado: ${item.title}`}
+                    >
+                      <i className="fa-solid fa-certificate" aria-hidden="true" />
+                      ver
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
