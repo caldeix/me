@@ -291,8 +291,8 @@ const EDUCATION: EduItem[] = [
     year: "2025",
     certUrl:
       "https://www.linkedin.com/learning/certificates/93a41b31c8805e15ecde8898b6435fc61566ba93c543e7d5f301da53703cfcd3",
-    platformSlug: "microsoft",
-    platformColor: "00A4EF",
+    platformSlug: "linkedin",
+    platformColor: "0A66C2",
   },
   {
     kind: "course",
