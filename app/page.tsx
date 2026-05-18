@@ -404,7 +404,7 @@ export default function Page() {
             </h1>
 
             <p className="tagline">
-              5+ yrs · PHP · REST APIs · Vue.js · Python · LLMs
+              {new Date().getFullYear() - 2020}+ yrs · PHP · REST APIs · Vue.js · Python · LLMs
             </p>
 
             <div className="cta-group">
