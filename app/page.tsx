@@ -1,7 +1,6 @@
 "use client"
 
-import { useState } from "react"
-import Image from "next/image"
+import { useState, useEffect } from "react"
 
 /* ── HELPERS ──────────────────────────────────────────────────── */
 function highlight(text: string, keywords: string[]): React.ReactNode {
@@ -48,20 +47,23 @@ function StarRating({ value }: { value: number }) {
 
 function TechIcon({
   slug,
+  customUrl,
   color,
   name,
   fallbackFA,
   size = 26,
 }: {
   slug?: string
+  customUrl?: string
   color: string
   name: string
   fallbackFA?: string
   size?: number
 }) {
   const [failed, setFailed] = useState(false)
+  const src = customUrl ?? (slug ? `https://cdn.simpleicons.org/${slug}/${color}` : null)
 
-  if (!slug || failed) {
+  if (!src || failed) {
     return fallbackFA ? (
       <i
         className={`${fallbackFA} tech-fa-icon`}
@@ -78,7 +80,7 @@ function TechIcon({
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={`https://cdn.simpleicons.org/${slug}/${color}`}
+      src={src}
       alt={name}
       width={size}
       height={size}
@@ -87,6 +89,33 @@ function TechIcon({
       onError={() => setFailed(true)}
     />
   )
+}
+
+/* ── GITHUB REPOS ─────────────────────────────────────────────── */
+interface GitHubRepo {
+  id: number
+  name: string
+  description: string | null
+  html_url: string
+  language: string | null
+  stargazers_count: number
+  updated_at: string
+  fork: boolean
+}
+
+const LANG_COLOR: Record<string, string> = {
+  PHP: "777BB4", Python: "3776AB", JavaScript: "F7DF1E",
+  TypeScript: "3178C6", Java: "ED8B00", HTML: "E34F26",
+  CSS: "1572B6", Shell: "89E051", Vue: "4FC08D",
+  Ruby: "CC342D", Go: "00ADD8", Rust: "CE4A00",
+  "Jupyter Notebook": "F37626", Dockerfile: "2496ED",
+}
+
+function timeAgo(iso: string): string {
+  const months = Math.floor((Date.now() - new Date(iso).getTime()) / 2_628_000_000)
+  if (months < 1) return "este mes"
+  if (months < 12) return `hace ${months}m`
+  return `hace ${Math.floor(months / 12)}a`
 }
 
 /* ── DATA ──────────────────────────────────────────────────────── */
@@ -98,47 +127,54 @@ const LINKS = {
   emailRaw: "caldeiro@pm.me",
 }
 
+/* basePath /me is NOT prepended by next/image in static export — use explicit path */
+const PROFILE_SRC = "/me/profile_pic.jpg"
+
 interface Tech {
   name: string
   slug?: string
+  customUrl?: string
   fallbackFA?: string
   stars: number
   color: string
-  dual?: { slug?: string; fallbackFA?: string; color: string; name: string }
+  dual?: { slug?: string; customUrl?: string; fallbackFA?: string; color: string; name: string }
 }
+
+const DEVICON = (name: string, variant = "original") =>
+  `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${name}/${name}-${variant}.svg`
 
 /* sorted descending by stars */
 const STACK: Tech[] = [
-  { name: "PHP",             slug: "php",               stars: 5,   color: "777BB4" },
-  { name: "MySQL",           slug: "mysql",             stars: 5,   color: "4479A1" },
-  { name: "Git",             slug: "git",               stars: 5,   color: "F05032" },
-  { name: "Linux",           slug: "linux",             stars: 4.5, color: "FCC624" },
-  { name: "Apache",          slug: "apache",            stars: 4.5, color: "D22128" },
-  { name: "REST API",        slug: "openapiinitiative", stars: 4.5, color: "6BA539" },
-  { name: "Python",          slug: "python",            stars: 4,   color: "3776AB" },
+  { name: "PHP",            slug: "php",               stars: 5,   color: "777BB4" },
+  { name: "MySQL",          slug: "mysql",             stars: 5,   color: "4479A1" },
+  { name: "Git",            slug: "git",               stars: 5,   color: "F05032" },
+  { name: "Linux",          slug: "linux",             stars: 4.5, color: "FCC624" },
+  { name: "Apache",         slug: "apache",            stars: 4.5, color: "D22128" },
+  { name: "REST API",       slug: "openapiinitiative", stars: 4.5, color: "6BA539" },
+  { name: "Python",         slug: "python",            stars: 4,   color: "3776AB" },
   {
-    name: "Postman / Apidog",
-    slug: "postman",
+    name:  "Postman / Apidog",
+    slug:  "postman",
     stars: 4,
     color: "FF6C37",
-    dual: { slug: "apidog", fallbackFA: "fa-solid fa-flask", color: "00B4D8", name: "Apidog" },
+    dual: { slug: "apidog", fallbackFA: "fa-solid fa-dog", color: "00B4D8", name: "Apidog" },
   },
-  { name: "VS Code",         slug: "visualstudiocode",  stars: 4,   color: "007ACC" },
-  { name: "Claude AI",       slug: "anthropic",         stars: 4,   color: "D4AF37" },
-  { name: "Laravel",         slug: "laravel",           stars: 3.5, color: "FF2D20" },
-  { name: "Docker",          slug: "docker",            stars: 3.5, color: "2496ED" },
-  { name: "Windsurf",        slug: "windsurf",          stars: 3.5, color: "00B4D8" },
-  { name: "AI Coding",       slug: "githubcopilot",     stars: 3.5, color: "8957E5" },
-  { name: "Obsidian",        slug: "obsidian",          stars: 3,   color: "7C3AED" },
-  { name: "Vue.js",          slug: "vuedotjs",          stars: 2.5, color: "4FC08D" },
-  { name: "Java",            slug: "openjdk",           stars: 2,   color: "ED8B00" },
-  { name: "JavaScript",      slug: "javascript",        stars: 2,   color: "F7DF1E" },
-  { name: "N8N",             slug: "n8n",               stars: 2,   color: "EA4B71" },
-  { name: "Jupyter",         slug: "jupyter",           stars: 2,   color: "F37626" },
-  { name: "TypeScript",      slug: "typescript",        stars: 1,   color: "3178C6" },
-  { name: "React",           slug: "react",             stars: 1,   color: "61DAFB" },
-  { name: "Next.js",         slug: "nextdotjs",         stars: 1,   color: "FFFFFF" },
-  { name: "OpenClaw",        fallbackFA: "fa-solid fa-paw", stars: 0.5, color: "888888" },
+  { name: "VS Code",        customUrl: DEVICON("vscode"),  stars: 4,   color: "007ACC" },
+  { name: "Claude AI",      slug: "anthropic",             stars: 4,   color: "CC9B7A" },
+  { name: "Laravel",        slug: "laravel",               stars: 3.5, color: "FF2D20" },
+  { name: "Docker",         slug: "docker",                stars: 3.5, color: "2496ED" },
+  { name: "Windsurf",       slug: "windsurf",              stars: 3.5, color: "00B4D8", fallbackFA: "fa-solid fa-wind" },
+  { name: "AI Coding",      slug: "githubcopilot",         stars: 3.5, color: "8957E5", fallbackFA: "fa-solid fa-robot" },
+  { name: "Obsidian",       slug: "obsidian",              stars: 3,   color: "7C3AED" },
+  { name: "Vue.js",         slug: "vuedotjs",              stars: 2.5, color: "4FC08D" },
+  { name: "Java",           customUrl: DEVICON("java"),    stars: 2,   color: "ED8B00" },
+  { name: "JavaScript",     slug: "javascript",            stars: 2,   color: "F7DF1E" },
+  { name: "N8N",            slug: "n8n",                   stars: 2,   color: "EA4B71", fallbackFA: "fa-solid fa-diagram-project" },
+  { name: "Jupyter",        slug: "jupyter",               stars: 2,   color: "F37626" },
+  { name: "TypeScript",     slug: "typescript",            stars: 1,   color: "3178C6" },
+  { name: "React",          slug: "react",                 stars: 1,   color: "61DAFB" },
+  { name: "Next.js",        slug: "nextdotjs",             stars: 1,   color: "EEEEEE" },
+  { name: "OpenClaw",       fallbackFA: "fa-solid fa-paw", stars: 0.5, color: "888888" },
 ]
 
 interface Job {
@@ -226,6 +262,24 @@ const EXPERIENCE: Job[] = [
 /* ── PAGE ──────────────────────────────────────────────────────── */
 export default function Page() {
   const [copied, setCopied] = useState(false)
+  const [repos, setRepos] = useState<GitHubRepo[]>([])
+  const [reposLoading, setReposLoading] = useState(true)
+
+  useEffect(() => {
+    fetch(
+      "https://api.github.com/users/caldeix/repos?sort=updated&per_page=30&type=public"
+    )
+      .then((r) => r.json())
+      .then((data: GitHubRepo[]) => {
+        setRepos(
+          data
+            .filter((r) => !r.fork)
+            .sort((a, b) => b.stargazers_count - a.stargazers_count || new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime())
+        )
+        setReposLoading(false)
+      })
+      .catch(() => setReposLoading(false))
+  }, [])
 
   const copyEmail = async () => {
     try {
@@ -242,13 +296,13 @@ export default function Page() {
       {/* ── HERO ── */}
       <section className="hero">
         <div className="hero-inner">
-          <Image
-            src="/profile_pic.jpg"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={PROFILE_SRC}
             alt="Luis Miguel Caldeiro"
             width={148}
             height={148}
             className="avatar"
-            priority
           />
 
           <div className="hero-content">
@@ -304,6 +358,7 @@ export default function Page() {
                   <div className="tech-dual-main">
                     <TechIcon
                       slug={tech.slug}
+                      customUrl={tech.customUrl}
                       color={tech.color}
                       name={tech.name}
                       fallbackFA={tech.fallbackFA}
@@ -313,6 +368,7 @@ export default function Page() {
                   <div className="tech-dual-sub">
                     <TechIcon
                       slug={tech.dual.slug}
+                      customUrl={tech.dual.customUrl}
                       color={tech.dual.color}
                       name={tech.dual.name}
                       fallbackFA={tech.dual.fallbackFA}
@@ -323,6 +379,7 @@ export default function Page() {
               ) : (
                 <TechIcon
                   slug={tech.slug}
+                  customUrl={tech.customUrl}
                   color={tech.color}
                   name={tech.name}
                   fallbackFA={tech.fallbackFA}
@@ -343,12 +400,7 @@ export default function Page() {
             <article key={job.company} className="job">
               <div className="job-header">
                 <div>
-                  <a
-                    href={job.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="job-company"
-                  >
+                  <a href={job.url} target="_blank" rel="noreferrer" className="job-company">
                     {job.company}
                   </a>
                   <span className="job-role">{job.role}</span>
@@ -356,9 +408,7 @@ export default function Page() {
                 <time className="job-period">{job.period}</time>
               </div>
 
-              <p className="job-desc">
-                {highlight(job.description, job.keywords)}
-              </p>
+              <p className="job-desc">{highlight(job.description, job.keywords)}</p>
 
               <div className="tech-tags">
                 {job.tech.map((t) => (
@@ -367,6 +417,56 @@ export default function Page() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      {/* ── PROJECTS ── */}
+      <section className="section" aria-label="Proyectos">
+        <h2 className="section-label">Proyectos</h2>
+
+        <div className="inv-grid">
+          {reposLoading
+            ? Array.from({ length: 8 }).map((_, i) => (
+                <div key={i} className="inv-slot inv-skeleton" aria-hidden="true" />
+              ))
+            : repos.map((repo) => {
+                const langColor = repo.language ? (LANG_COLOR[repo.language] ?? "555555") : "444444"
+                return (
+                  <a
+                    key={repo.id}
+                    href={repo.html_url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inv-slot"
+                    title={repo.description ?? repo.name}
+                  >
+                    <div className="inv-top">
+                      {repo.language && (
+                        <span
+                          className="inv-lang"
+                          style={{ background: `#${langColor}22`, color: `#${langColor}`, borderColor: `#${langColor}44` }}
+                        >
+                          {repo.language}
+                        </span>
+                      )}
+                    </div>
+
+                    <span className="inv-name">{repo.name}</span>
+
+                    {repo.description && (
+                      <p className="inv-desc">{repo.description}</p>
+                    )}
+
+                    <div className="inv-meta">
+                      <span className="inv-stars">
+                        <i className="fa-solid fa-star" aria-hidden="true" />
+                        {repo.stargazers_count}
+                      </span>
+                      <span className="inv-time">{timeAgo(repo.updated_at)}</span>
+                    </div>
+                  </a>
+                )
+              })}
         </div>
       </section>
 

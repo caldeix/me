@@ -25,14 +25,6 @@ export const metadata: Metadata = {
     description: "5+ years · PHP · REST APIs · Vue.js · Python · LLMs",
     url: "https://caldeix.github.io/me",
     siteName: "Caldeiro · Portfolio",
-    images: [
-      {
-        url: "https://media.licdn.com/dms/image/v2/C4D03AQGJ9B5PJj0K1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1631016421362",
-        width: 800,
-        height: 800,
-        alt: "Luis Miguel Caldeiro",
-      },
-    ],
     locale: "es_ES",
     type: "website",
   },
@@ -48,7 +40,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        {/* basePath is /me — explicit path required for static export */}
+        <link rel="icon" href="/me/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
